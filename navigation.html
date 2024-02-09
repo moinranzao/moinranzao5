@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Video Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #background-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1000;
+      background-size: cover;
+    }
+
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    nav a:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="background-video">
+    <source src="C:\Users\moinr\Desktop\updated\bgm.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="content">
+    
+    <nav>
+      <a href="C:\Users\moinr\Desktop\updated\workhub.html">Work-hub</a>
+      <a href="C:\Users\moinr\Desktop\updated\about.html">About</a>
+      <a href="https://mueenulislam.github.io/dynamiccv.html">Dev.</a>
+    </nav>
+  </div>
+
+  <script>
+    // JavaScript for handling navigation
+    const navLinks = document.querySelectorAll('nav a');
+
+    navLinks.forEach(link => {
+      link.addEventListener('on click', scrollToSection);
+    });
+
+    function scrollToSection(event) {
+      event.preventDefault();
+      const targetId = event.target.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    }
+  </script>
+</body>
+</html>

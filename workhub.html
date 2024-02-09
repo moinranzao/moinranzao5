@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Menu with Nested Menus and Background Video</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: repeat;
+      background-position: center;
+      transition: background-image 0.5s ease-in-out;
+    }
+
+    video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1000;
+      background-size: cover;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .navbar-toggle {
+      display: block;
+      cursor: pointer;
+      color: white;
+      font-size: 24px;
+    }
+
+    .navbar-menu {
+      display: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .navbar-menu li {
+      padding: 10px;
+    }
+
+    .navbar-menu li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      z-index: 1001;
+    }
+
+    .navbar-menu li:hover .sub-menu {
+      display: block;
+    }
+
+    .sub-menu li {
+      padding: 10px;
+    }
+
+    .sub-menu li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Video background -->
+  <video autoplay muted loop>
+    <source src="C:\Users\moinr\Desktop\updated\workhub.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+ <HTML>
+<TITLE>LINK SETUP.HOME</TITLE>
+
+
+<head>
+<h6>
+
+</h6>
+
+<link rel="stylesheet" href="https://mueenulislam.github.io/style1.css">
+<meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+</head>
+
+
+<body > 
+
+<div style="display: flex; justify-content: center; align-items: center;">
+
+<div class="cube"> <!-- Creating 6 divs for each face of the cube --> 
+<div class="box box1"> <img src= "https://play-lh.googleusercontent.com/qS08Meln-CfQfIl-iThcLSbUJRi3pgQTq6IdOdJo-NwAY-VsS3AUkld91HRH-iSzKK5c" alt=""> </div>
+ <div class="box box2"> <img src= "data:image/jpeg;base64,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qS3D1GgQAXtySB/URup7AcuVdXua0dB4j5TYD5rScFt8IxrNErmka+HC4ve3rAn4q24dkNE6rnwXDGUtJJ/Mbn9h8AF3L0sGDs5fk8zPmVvgyiIuk5wiIgCIiAIiIAiIgPMLjxHDKL/eptJ65RPrqu1FDlPySqa8Mg6vLGHOjS3yJ+hkLmfylTvlqPHnlMfIKyosn0+N/wBqNV1GVf3MqruUtSK3qyfoRutZ5Uf4orA5g3VpsWzG/dW6EhZvo8X0XXWZvspD+VK8EB7NIm4Pa8W3XPiOWMUfd9npbxHoLm1/86K/rCq+hxF112U+dVeU8WdMnbxHpvb76ryOTcWSPFTAtq5x0PYfH919IRF0WNfY9/l/Y+cs5DrwP+em235S6Dby2H7zoumnyA78WJEdBT17zmtvsr4iv7XF9FX1mb7/AOCns5BpfirVD5Bo+oK66PJOFbqHu/qefL8MKzIrrp8a+EZvqcr/ALmRNDl3DMu2gyerhmPq6VJMphogAAdAIHoFsRaKUvCMnVPywsoisQEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAf/2Q==" alt="image 2"> </div> 
+<div class="box box3"> <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwyiPui9pNsMGohOpvWTJ9shjB3Eee5dReXAaeB5nEz5VuKIP5NEnRzXDPJc0bfjDSw3A&usqp=CAU" alt="image 3"> </div>
+ <div class="box box4"> <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2QrvP-7Mi0kPUZLktE8fzYzHfCaQhzBc7jA&usqp=CAU" alt="image 4"> </div> 
+<div class="box box5"> <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaLmIi-N1hQWhtpa-ULlz2RwHU2fe4Ytdgag&usqp=CAU" alt="image 5"> </div>
+ <div class="box box6"> <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVdyUamYXgKAZFHC4ul0l8tVkfQzXtaegxJQ&usqp=CAU" alt="image 6"> </div>
+ </div>
+ </div>
+
+<br>
+<br>
+
+
+<div style="display: flex; justify-content: center; align-items: center;">
+
+
+<div class="dropdown">
+  <button class="dropbtn">Index</button>
+  <div class="dropdown-content">
+    <a href="https://protect-eu.mimecast.com/s/S5pVC79PqhXqrMEF8qoy1?domain=americana.net-chef.com" target="main">Daily waste</a>
+    <a href="https://protect-eu.mimecast.com/s/vVdFC83QrS5rm3OI1Dj3J?domain=americana.net-chef.com" target="main">Actual cost</a>
+    <a href="https://protect-eu.mimecast.com/s/xbY4C990vhW1JnRu3AQar?domain=americana.net-chef.com" target="main">act vs thr cost </a>
+ <a href="https://protect-eu.mimecast.com/s/DbH6C08GjiX8nvJFWDXqC?domain=americana.net-chef.com" target="main">menu mix</a>
+    <a href="https://protect-eu.mimecast.com/s/hgyNCgpmWi1kv6PsE5eSx?domain=americana.ct-teamworx.com" target="main">labour scheduling</a>
+    <a href="https://protect-eu.mimecast.com/s/wihSCjYpWi49zElinaUCx?domain=americana.net-chef.com" target="main">sales forecast</a>
+  <a href="https://almp.americana.rest/ds/dashboard" target="main">delivery</a>
+  <a href="https://line.yallow.com/dispatcher" target="main">Get Driver</a>
+   <a href="https://fa-eucb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FuseWelcome?_adf.ctrl-state=14u9g2hlqx_108&_afrLoop=65779317785967293&_afrFS=16&_afrMT=screen&_afrMFW=1366&_afrMFH=607&_afrMFDW=1366&_afrMFDH=768&_afrMFC=8&_afrMFCI=0&_afrMFM=0&_afrMFR=96&_afrMFG=0&_afrMFS=0&_afrMFO=0" target="main">Annual vacation balance</a>
+   <a href="https://fa-eucb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fnd=%3B%3B%3B%3Bfalse%3B256%3B%3B%3B&fndGlobalItemNodeId=PER_HCMPEOPLETOP_FUSE_MY_TEAM&_afrLoop=65779156243319619&_afrWindowMode=0&_afrWindowId=w84cf9bj4&_adf.ctrl-state=14u9g2hlqx_1&_afrFS=16&_afrMT=screen&_afrMFW=1366&_afrMFH=607&_afrMFDW=1366&_afrMFDH=768&_afrMFC=8&_afrMFCI=0&_afrMFM=0&_afrMFR=96&_afrMFG=0&_afrMFS=0&_afrMFO=0" target="main">My Team</a>
+  </div>
+  </div>
+
+
+
+<div class="dropdown">
+  <button class="dropbtn">Products</button>
+  <div class="dropdown-content">
+    <a href="https://mueenulislam.github.io\blazingwraptor.pdf" target="main">blazing wraptor</a>
+    <a href="https://mueenulislam.github.io\Doritos_Chicken_.pdf" target="main">dorritos chicken</a>
+    <a href="https://mueenulislam.github.io\01-02-08_CheeseSteak_Burger.pdf" target="main">steak burger</a>
+ <a href="https://mueenulislam.github.io\Philly Cheesesteak Fries ME IG 2022.pdf" target="main">steak fries</a>
+    <a href="https://mueenulislam.github.io\Steak Loader  July 20 2014.pdf" target="main">steak loader</a>
+    <a href="https://mueenulislam.github.io\Grilled Onion with 100gm Butter Bar.pdf" target="main">diced onion</a>
+     <a href="https://mueenulislam.github.io\Chililava.pdf" target="main">chililava</a>
+     <a href="https://mueenulislam.github.io\Electric Lemonade Cooler ME 2023.pdf" target="main">electric lemonade</a>
+  </div>
+  </div>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Service support </button>
+  <div class="dropdown-content">
+ <a href="https://protect-eu.mimecast.com/s/fZngCqQzWSyWgBLFWG0f7?domain=outlook.office.com" target="main">outlook </a>
+<a href="https://protect-eu.mimecast.com/s/bns2Cr2AWiR9yMwC0zX-F?domain=americana-prod.my.site.com" target="main">maintainance  </a>
+<a href="https://protect-eu.mimecast.com/s/1SeLCvQG6SnXJ1OCrQUCD?domain=americana.sprinklr.com" target="main">sprinkler </a>
+<a href="https://protect-eu.mimecast.com/s/YlgdCw0J6UEp560TLVtgc?domain=americana.net-chef.com" target="main">crunch time </a>
+<a href="https://ar-medxb-prod-bpm-oic-axcajhzysxjs-dx.integration.ocp.oraclecloud.com/ic/process/workspace/faces/worklist.jspx" target="main">oracle cloud</a>
+<a href="https://protect-eu.mimecast.com/s/0-UZCywLWiPnGD6H6hZ8V?domain=food-servicedesk.americana-food.com" target="main">IT </a>
+<a href="https://protect-eu.mimecast.com/s/OaELCz6MgUYLXD8srT53i?domain=app.powerbi.com" target="main"> power bi</a>
+ <a href="https://protect-eu.mimecast.com/s/IjanCA63EUKYx0ru5NJz2?domain=login-eucb-saasfaprod1.fa.ocs.oraclecloud.com" target="main"> oracle erp </a>
+</div>
+  </div>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Home </button>
+  <div class="dropdown-content">
+ <a href="C:\Users\moinr\Desktop\updated\navigation.html" target="main">Strike_BAck </a>
+</div>
+
+
+
+  </div>
+</div>
+
+ </div> </div>
+ 
+
+
+
+
+
+</body>
+</HTML>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('navbarMenu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
